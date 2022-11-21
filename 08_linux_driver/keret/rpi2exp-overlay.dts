@@ -1,0 +1,94 @@
+// Definitions for the rpi2exp expansion board
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "brcm,bcm2709";
+
+	fragment@0 {
+		target = <&i2c1>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			clock-frequency = <100000>;
+			status = "okay";
+
+			// RTC
+			ds1307@68 {
+				compatible = "maxim,ds1307";
+				reg = <0x68>;
+				status = "okay";
+			};
+			
+			rpi2exp_adc@4b {
+				compatible = "rpi2exp-adc";
+				reg = <0x4b>;
+				status = "okay";
+			};
+			
+			rpi2exp_pot@2e {
+				compatible = "rpi2exp-pot";
+				reg = <0x2e>;
+				status = "okay";
+			};
+			
+			rpi2exp_temp@48 {
+				compatible = "rpi2exp-temp";
+				reg = <0x48>;
+				status = "okay";
+			};
+		};
+	};
+	
+	fragment@1 {
+		target-path = "/";
+		__overlay__ {
+			// LEDs
+			rpi2exp_leds {
+				compatible = "rpi2exp-leds";
+				status = "okay";
+				led1-gpio = <&gpio 22 0>;
+				led2-gpio = <&gpio 23 0>;
+				led3-gpio = <&gpio 24 0>;
+				led4-gpio = <&gpio 25 0>;
+			};
+			// BTNs
+			rpi2exp_btns {
+				compatible = "rpi2exp-btns";
+				status = "okay";
+				btn1-gpio = <&gpio 5 0>;
+				btn2-gpio = <&gpio 6 0>;
+				btn3-gpio = <&gpio 12 0>;
+				btn4-gpio = <&gpio 13 0>;
+			};
+		};
+	};
+
+  	fragment@2 {
+		target = <&spi0>;
+		__overlay__ {
+			#address-cells = <1>;
+			#size-cells = <0>;
+			status = "okay";
+		  
+			spidev@0{
+				status = "disabled";
+			};
+
+			spidev@1{
+				status = "disabled";
+			};
+		  
+			// LCD
+			lcd@0{
+				compatible = "rpi2exp-lcd";
+				status = "okay";
+				reg = <0>;	/* CE0 */
+				spi-max-frequency = <100000>;
+				rs-gpio = <&gpio 27 0>;
+				bl-gpio = <&gpio 18 0>;
+			};
+		};
+	};
+
+};
