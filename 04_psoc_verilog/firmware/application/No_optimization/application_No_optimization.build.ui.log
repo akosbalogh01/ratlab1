@@ -1,0 +1,7 @@
+2020-08-27T14:21:53.337391400255-14:21:53 **** Clean-only build of configuration No_optimization for project application ****
+000-make clean 
+000-rm -rf  ./src/benchmarking.o ./src/capture.o ./src/display.o ./src/imageProcessor.o ./src/main.o ./src/vdma.o  ./src/benchmarking.d ./src/capture.d ./src/display.d ./src/imageProcessor.d ./src/main.d ./src/vdma.d  application.elf.size  application.elf
+000-' '
+00255-
+14:21:53 Build Finished (took 205ms)
+

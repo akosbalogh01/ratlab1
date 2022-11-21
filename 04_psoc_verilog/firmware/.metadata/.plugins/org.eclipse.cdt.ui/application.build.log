@@ -1,0 +1,7 @@
+14:21:53 **** Clean-only build of configuration No_optimization for project application ****
+make clean 
+rm -rf  ./src/benchmarking.o ./src/capture.o ./src/display.o ./src/imageProcessor.o ./src/main.o ./src/vdma.o  ./src/benchmarking.d ./src/capture.d ./src/display.d ./src/imageProcessor.d ./src/main.d ./src/vdma.d  application.elf.size  application.elf
+' '
+
+14:21:53 Build Finished (took 205ms)
+

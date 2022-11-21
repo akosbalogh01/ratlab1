@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="application" location="D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application" platform="D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/system_wrapper_platform_0_1/export/system_wrapper_platform_0_1/system_wrapper_platform_0_1.xpfm" platformUID="xilinx.com::system_wrapper:1.0(custom)" systemProject="application_system" sysConfig="system_wrapper_platform_0_1" runtime="C/C++" cpu="bsp_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="48e6996004318db7df7c1edf8fe35d09">
+  <configuration name="No_optimization" id="xilinx.gnu.armv7.exe.debug.1639374991" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.633943504" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Full_optimization" id="xilinx.gnu.armv7.exe.debug.1639374991.1287813136" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+</sdkproject:SdkProject>

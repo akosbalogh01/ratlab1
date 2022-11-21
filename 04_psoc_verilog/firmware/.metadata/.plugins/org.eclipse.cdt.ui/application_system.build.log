@@ -1,0 +1,10 @@
+19:15:28 **** Incremental Build of configuration Debug for project application_system ****
+make all 
+Generating bif file for the system project
+generate_system_bif.bat 59377 D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/system_wrapper_platform_0_1/export/system_wrapper_platform_0_1/system_wrapper_platform_0_1.xpfm bsp_domain D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application_system/Debug/system.bif
+sdcard_gen --xpfm D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/system_wrapper_platform_0_1/export/system_wrapper_platform_0_1/system_wrapper_platform_0_1.xpfm --sys_config system_wrapper_platform_0_1 --bif D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application_system/Debug/system.bif --bitstream D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application/_ide/bitstream/system_wrapper.bit --elf D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application/No_optimization/application.elf,ps7_cortexa9_0
+creating BOOT.BIN using D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application/_ide/bitstream/system_wrapper.bit
+Running D:/Xilinx/Vitis/2019.2/bin/bootgen  -image D:/BME/Doktori/Oktatas/2020F2/SoCLabor2/KezdetiMeres/firmware/application_system/Debug/sd_card_temp/boot.bif -w -o i BOOT.BIN
+
+19:15:35 Build Finished (took 7s.283ms)
+
